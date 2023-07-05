@@ -1,0 +1,407 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+.top-container {
+    height: 664.290px;
+    padding: 80px;
+    background: linear-gradient(300deg, #C5DFF8, #A0BFE0, #4A55A2);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+.pro {
+    text-decoration: underline;
+}
+  
+@keyframes gradient-animation {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+    }
+}
+
+p {
+    line-height: 2;
+}
+
+hr {
+    border: dotted #d1d4e6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  'Helvetica Neue', sans-serif;
+    color: #4A55A2;
+    font-weight: 400;
+}
+
+.title-text h2 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  'Helvetica Neue', sans-serif;
+    color: #4A55A2;
+    font-weight: 100;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+    color: #595b5c;
+    font-size: 21px;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    user-select: none;
+    animation: cloudMove 10s linear infinite;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 600px;
+    bottom: 450px;
+    user-select: none;
+    animation: cloudMove 10s linear infinite;
+}
+
+@keyframes cloudMove {
+    0%, 100% {
+        transform: translateX(-100%, 0%);
+    }
+
+    25% {
+        transform: translate(-100%, -50%);
+    }
+
+    50% {
+        transform: translateX(100%, -50%);
+    }
+
+    75% {
+        transform: translate(100%, 0%);
+    }
+}
+
+.mountain {
+    user-select: none;
+    position: relative;
+    top: 78px;
+}
+
+.icon-profile {
+    margin-top: 7.5rem;
+}
+
+.profile img {
+    user-select: none;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    margin: 100px auto 0 auto;
+    text-align: left;
+    row-gap: 2rem;
+}
+
+.chilli-img {
+    margin-top: 1.5rem;
+    margin-left: 8rem;
+}
+
+.code-img {
+    user-select: none;
+    margin-top: 1.5rem;
+    margin-left: 6.3rem;
+}
+
+a .img-perfum {
+    user-select: none;
+}
+
+a .img-grid {
+    user-select: none;
+}
+
+.img-perfum {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.img-grid {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.perfum-about {
+    position: relative;
+    left: 41.5rem;
+    width: 30%;
+}
+
+.grid-about {
+    position: relative;
+    left: 41.5rem;
+    width: 30%;
+}
+
+.img-perfum:hover, .img-grid:hover {
+    transform: translateY(-10px);
+}
+
+.middle-container {
+    margin: 100px 0;
+}
+
+p {
+    margin: auto;
+    color: #595b5c;
+    font-size: 21px;
+}
+
+.contact-message {
+    width: 40%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.btn {
+    background-color: #4A55A2;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #656eb4;
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #4A55A2;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  'Helvetica Neue', sans-serif;
+}
+
+h3 {
+    color: #4A55A2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  'Helvetica Neue', sans-serif;
+}
+
+.copyrigth {
+    color: #eaf6f6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    padding: 20px 0;
+}
+
+.bottom-container {
+    background-color: #A0BFE0;
+    padding: 50px 0 20px;
+}
+
+.footer-link {
+    font-size: 18px;
+    color: #656eb4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  'Helvetica Neue', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+    transition: color;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.subtitle-project1 {
+    font-weight: 100;
+    margin-top: -15px;
+    font-size: 30px;
+}
+
+.subtitle-project2 {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+@media (min-width: 319px) and (max-width: 450px) {
+    .top-container {
+        padding: 30px;
+    }
+
+    hr {
+        margin-right: 208px;
+    }
+
+    h1 {
+        position: relative;
+        top: 10rem;
+        right: 13px;
+        font-size: 3rem;
+    }
+
+    h2 {
+        margin-right: 1.5rem;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-right: 30px;
+    }
+
+    .title-text h2 {
+        position: relative;
+        right: 15px;
+        top: 10rem;
+        font-size: 2rem;
+    }
+    
+    .mountain {
+        position: relative;
+        left: 100px;
+        top: 129px;
+    }
+
+    .top-cloud {
+        position: absolute;
+        width: 90px;
+        top: 80px;
+        right: 8.5rem;
+    }
+
+    .bottom-cloud {
+        position: absolute;
+        width: 90px;
+        bottom: 400px;
+        left: 8rem;
+        animation: cloudMove-bottom 10s linear infinite;
+    }
+
+    @keyframes cloudMove-bottom {
+        0%, 100% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(100%);
+        }
+      }
+
+    .intro {
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    .title-skills {
+        font-size: 35px;
+        margin-right: 1rem;
+    }
+
+    .coding {
+        height: 150px;
+    }
+
+    .typing {
+        height: 400;
+    }
+
+    .code-img {
+        position: relative;
+        bottom: 30px;
+        left: 86px;
+        margin-left: 15px;
+    }
+
+    .typing h3 {
+        position: relative;
+        top: 110px;
+        right: 70px;
+        margin-top: 3rem;
+    }
+
+    .text-typing {
+        position: relative;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 120px;
+        top: 110px;
+        right: 185px;
+        width: 220%;
+    }
+
+    .parent {
+        margin: 0;
+    }
+
+    .icon-profile {
+        margin-right: 1rem;
+    }
+
+    .img-perfum {
+        outline: none;
+        margin-right: 29px;
+        width: 350px;
+    }
+
+    .img-grid {
+        margin-right: 30px;
+        width: 350px;
+    }
+
+    .project-grid {
+        margin-top: -50rem;
+    }
+
+    .contacts {
+        margin-top: -40rem;
+    }
+    
+    .hr {
+        position: relative;
+        bottom: 42rem;
+    }
+
+    .contact-message {
+        position: relative;
+        right: 15px;
+        width: 80%;
+    }
+
+    .btn {
+        position: relative;
+        right: 20px;
+    }
+
+    .footer-link {
+        position: relative;
+        right: 10px;
+    }
+
+    .copyrigth {
+        position: relative;
+        right: 20px;
+    }
+}

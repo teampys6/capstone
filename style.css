@@ -251,10 +251,6 @@ h3 {
         padding: 30px;
     }
 
-    hr {
-        margin-right: 208px;
-    }
-
     h1 {
         position: relative;
         top: 10rem;
@@ -262,13 +258,11 @@ h3 {
         font-size: 3rem;
     }
 
-    h2 {
-        margin-right: 1.5rem;
-    }
-
     h3 {
+        position: relative;
         font-size: 20px;
         margin-right: 30px;
+        left: 10px;
     }
 
     .title-text h2 {
@@ -310,7 +304,6 @@ h3 {
 
     .intro {
         width: 80%;
-        margin-left: 30px;
     }
 
     .title-skills {
@@ -329,14 +322,14 @@ h3 {
     .code-img {
         position: relative;
         bottom: 30px;
-        left: 86px;
+        left: 105px;
         margin-left: 15px;
     }
 
     .typing h3 {
         position: relative;
+        left: -60px;
         top: 110px;
-        right: 70px;
         margin-top: 3rem;
     }
 
@@ -346,62 +339,61 @@ h3 {
         margin-top: 0;
         margin-left: 0;
         margin-right: 0;
-        margin-bottom: 120px;
+        margin-bottom: 100px;
         top: 110px;
-        right: 185px;
-        width: 220%;
+        right: 160px;
+        width: 200%;
     }
 
     .parent {
         margin: 0;
     }
 
-    .icon-profile {
-        margin-right: 1rem;
-    }
-
     .img-perfum {
         outline: none;
-        margin-right: 29px;
         width: 350px;
+    }
+
+    .perfum-about {
+        left: 40px;
+        width: 80%;
+    }
+
+    .perfum-about p {
+        font-size: 20px;
     }
 
     .img-grid {
-        margin-right: 30px;
         width: 350px;
     }
 
-    .project-grid {
-        margin-top: -50rem;
+    .grid-about {
+        left: 40px;
+        width: 80%;
     }
 
-    .contacts {
-        margin-top: -40rem;
+    .grid-about p {
+        font-size: 20px;
     }
-    
-    .hr {
-        position: relative;
-        bottom: 42rem;
-    }
+
 
     .contact-message {
         position: relative;
-        right: 15px;
         width: 80%;
     }
 
     .btn {
         position: relative;
-        right: 20px;
+        right: 5px;
     }
 
     .footer-link {
         position: relative;
-        right: 10px;
+        right: 5px;
     }
 
     .copyrigth {
         position: relative;
-        right: 20px;
+        right: 10px;
     }
 }

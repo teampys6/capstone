@@ -243,7 +243,7 @@ h3 {
 
 @media (min-width: 319px) and (max-width: 450px) {
     .top-container {
-        padding-bottom: 1px;
+        padding: 1px;
     }
 
     h1 {
@@ -270,9 +270,8 @@ h3 {
     }
     
     .mountain {
-        top: 0;
-        right: 45px;
-        margin-top: 185px;
+        position: unset;
+        margin-top: 250px;
         width: 350px;
         height: 208px;
     }
@@ -280,7 +279,7 @@ h3 {
     .top-cloud {
         position: absolute;
         width: 90px;
-        top: 200px;
+        top: 80px;
         right: 8.5rem;
     }
 
@@ -288,7 +287,7 @@ h3 {
         position: absolute;
         width: 90px;
         bottom: 400px;
-        top: 520px;
+        top: 430px;
         left: 8rem;
         animation: cloudMove-bottom 10s linear infinite;
     }

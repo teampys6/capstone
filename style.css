@@ -249,7 +249,6 @@ h3 {
 @media (min-width: 319px) and (max-width: 450px) {
     .top-container {
         padding: 30px;
-        padding-bottom: 1px;
     }
 
     h1 {
@@ -323,13 +322,13 @@ h3 {
     .code-img {
         position: relative;
         bottom: 30px;
-        left: 90px;
+        left: 85px;
         margin-left: 30px;
     }
 
     .typing h3 {
         position: relative;
-        left: -70px;
+        left: -75px;
         top: 110px;
         margin-top: 3rem;
     }

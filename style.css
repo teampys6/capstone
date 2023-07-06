@@ -249,7 +249,7 @@ h3 {
 @media (min-width: 319px) and (max-width: 450px) {
     .top-container {
         padding: 30px;
-        padding-bottom: 25px;
+        padding-bottom: 30px;
     }
 
     h1 {

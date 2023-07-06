@@ -5,7 +5,8 @@ body {
 
 .top-container {
     height: 664.290px;
-    padding: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background: linear-gradient(300deg, #C5DFF8, #A0BFE0, #4A55A2);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
@@ -243,7 +244,7 @@ h3 {
 
 @media (min-width: 319px) and (max-width: 450px) {
     .top-container {
-        padding: 1px;
+        padding-bottom: 2px;
     }
 
     h1 {
@@ -358,7 +359,7 @@ h3 {
     }
 
     .perfum-about p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .img-grid {
@@ -371,7 +372,7 @@ h3 {
     }
 
     .grid-about p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
 

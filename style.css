@@ -249,12 +249,12 @@ h3 {
 @media (min-width: 319px) and (max-width: 450px) {
     .top-container {
         padding: 30px;
+        padding-bottom: 25px;
     }
 
     h1 {
         position: relative;
         top: 10rem;
-        right: 13px;
         font-size: 3rem;
     }
 
@@ -267,13 +267,14 @@ h3 {
 
     .title-text h2 {
         position: relative;
-        right: 15px;
         top: 10rem;
         font-size: 2rem;
     }
     
     .mountain {
-        margin-top: 205px;
+        display: flex;
+        justify-content: center;
+        margin-top: 228px;
         width: 350px;
         height: 208px;
     }

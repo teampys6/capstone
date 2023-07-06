@@ -273,9 +273,9 @@ h3 {
     }
     
     .mountain {
-        position: relative;
-        left: 100px;
-        top: 129px;
+        margin-top: 200px;
+        width: 350px;
+        height: 208px;
     }
 
     .top-cloud {
@@ -289,6 +289,7 @@ h3 {
         position: absolute;
         width: 90px;
         bottom: 400px;
+        top: 480px;
         left: 8rem;
         animation: cloudMove-bottom 10s linear infinite;
     }
@@ -322,13 +323,13 @@ h3 {
     .code-img {
         position: relative;
         bottom: 30px;
-        left: 105px;
+        left:90px;
         margin-left: 15px;
     }
 
     .typing h3 {
         position: relative;
-        left: -60px;
+        left: -70px;
         top: 110px;
         margin-top: 3rem;
     }
@@ -341,7 +342,7 @@ h3 {
         margin-right: 0;
         margin-bottom: 100px;
         top: 110px;
-        right: 160px;
+        right: 170px;
         width: 200%;
     }
 
@@ -395,5 +396,13 @@ h3 {
     .copyrigth {
         position: relative;
         right: 10px;
+    }
+
+    .subtitle-project1 {
+        font-size: 25px;
+    }
+
+    .subtitle-project2 {
+        font-size: 25px;
     }
 }

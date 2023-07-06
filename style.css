@@ -259,6 +259,10 @@ h3 {
         left: 10px;
     }
 
+    hr {
+        width: 15%;
+    }
+
     .title-text h2 {
         position: relative;
         top: 10rem;
@@ -267,8 +271,9 @@ h3 {
     
     .mountain {
         display: flex;
+        position: unset;
         justify-content: center;
-        margin-top: 215px;
+        margin-top: 305px;
         width: 350px;
         height: 208px;
     }

@@ -117,11 +117,6 @@ h1 {
     row-gap: 2rem;
 }
 
-.chilli-img {
-    margin-top: 1.5rem;
-    margin-left: 8rem;
-}
-
 .code-img {
     user-select: none;
     margin-top: 1.5rem;
@@ -273,7 +268,7 @@ h3 {
     .mountain {
         display: flex;
         justify-content: center;
-        margin-top: 228px;
+        margin-top: 215px;
         width: 350px;
         height: 208px;
     }
@@ -321,14 +316,14 @@ h3 {
 
     .code-img {
         position: relative;
-        bottom: 30px;
-        left: 85px;
-        margin-left: 30px;
+        bottom: 25px;
+        left: 68px;
+        margin-left: 75px;
     }
 
     .typing h3 {
         position: relative;
-        left: -75px;
+        left: -65px;
         top: 110px;
         margin-top: 3rem;
     }
@@ -341,7 +336,7 @@ h3 {
         margin-right: 0;
         margin-bottom: 100px;
         top: 110px;
-        right: 170px;
+        right: 165px;
         width: 200%;
     }
 

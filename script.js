@@ -33,7 +33,3 @@ sr.reveal('.project-perfum', {
 sr.reveal('.project-grid', {
     duration: 1500
 })
-
-sr.reveal('.perfum-about')
-
-sr.reveal('.grid-about')

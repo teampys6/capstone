@@ -67,7 +67,7 @@ h1 {
 .bottom-cloud {
     position: absolute;
     left: 600px;
-    bottom: 450px;
+    top: 450px;
     user-select: none;
     animation: cloudMove 10s linear infinite;
 }
@@ -115,9 +115,9 @@ h1 {
 }
 
 .code-img {
+    position: relative;
     user-select: none;
     margin-top: 1.5rem;
-    margin-left: 6.3rem;
 }
 
 a .img-perfum {
@@ -136,18 +136,6 @@ a .img-grid {
 .img-grid {
     border-radius: 10px;
     transition: transform 0.3s;
-}
-
-.perfum-about {
-    position: relative;
-    left: 41.5rem;
-    width: 30%;
-}
-
-.grid-about {
-    position: relative;
-    left: 41.5rem;
-    width: 30%;
 }
 
 .img-perfum:hover, .img-grid:hover {
@@ -353,26 +341,8 @@ h3 {
         width: 350px;
     }
 
-    .perfum-about {
-        left: 40px;
-        width: 80%;
-    }
-
-    .perfum-about p {
-        font-size: 18px;
-    }
-
     .img-grid {
         width: 350px;
-    }
-
-    .grid-about {
-        left: 40px;
-        width: 80%;
-    }
-
-    .grid-about p {
-        font-size: 18px;
     }
 
 

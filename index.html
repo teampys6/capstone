@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Capstone</title>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -20,7 +21,7 @@
     <div class="middle-container">
         <div class="profile">
             <img class="icon-profile" src="./assets/images/arthur-profile.png" alt="arthur-profile-icon">
-            <h2>Olá.</h2>
+            <h2 class="title-intro">Olá.</h2>
             <p class="intro">Sou desenvolvedor Web, faço faculdade e curso da área. E ainda estou estudando, mas eu ❤️ programação.</p>
         </div>
         <hr>
@@ -41,11 +42,13 @@
         <hr>
 
         <div class="projects">
-            <div class="project1">
+            <div class="project">
                 <div class="project-perfum">
                     <h2 class="title-project">Projetos</h2>
                     <h2 class="subtitle-project1">Cartão de visualização de produto</h2>
-                    <a href="https://github.com/teampys6/product-preview-card-component"><img class="img-perfum" src="./assets/images/project1.png" alt="projeto de venda de perfumes"></a>
+                    <div class="image-perfum">
+                        <a href="https://github.com/teampys6/product-preview-card-component"><img class="img-perfum" src="./assets/images/project1.png" alt="projeto de venda de perfumes"></a>
+                    </div>
                 </div>
 
                 <div class="perfum-about">
@@ -54,7 +57,9 @@
 
                 <div class="project-grid">
                     <h2 class="subtitle-project2">Componente de grid</h2>
-                    <a href="https://github.com/teampys6/single-price-grid-component-master"><img class="img-grid" src="./assets/images/project2.png" alt="projeto de grid"></a>
+                    <div class="image-grid">
+                        <a href="https://github.com/teampys6/single-price-grid-component-master"><img class="img-grid" src="./assets/images/project2.png" alt="projeto de grid"></a>
+                    </div>
                 </div>
 
                 <div class="grid-about">
@@ -83,5 +88,7 @@
         <a class="footer-link" href="https://www.instagram.com/luiiiz.arthur/">Instagram</a>
         <p class="copyrigth">© Arthur @ teampys6.</p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

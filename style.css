@@ -238,7 +238,7 @@ h3 {
     font-size: 30px;
 }
 
-.mountain, .title-text, .skills, .project, .image-perfum, .perfum-about, .image-grid, .grid-about, .icon-profile, .intro, .title-intro {
+.mountain, .title-text, .skills, .project, .image-perfum, .image-grid, .icon-profile, .intro, .title-intro {
     visibility: hidden;
 }
 

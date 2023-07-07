@@ -26,34 +26,14 @@ sr.reveal('.skills', {
     duration: 1500
 })
 
-sr.reveal('.project', {
+sr.reveal('.project-perfum', {
     duration: 1500
 })
 
-sr.reveal('.image-perfum', {
-    delay: 200,
-    easing: "ease-out",
-    interval: 200,
-    scale: 1.2
+sr.reveal('.project-grid', {
+    duration: 1500
 })
 
-sr.reveal('.perfum-about', {
-    delay: 200,
-    easing: "ease-out",
-    interval: 200,
-    scale: 1.2
-})
+sr.reveal('.perfum-about')
 
-sr.reveal('.image-grid', {
-    delay: 200,
-    easing: "ease-out",
-    interval: 200,
-    scale: 1.2
-})
-
-sr.reveal('.grid-about', {
-    delay: 200,
-    easing: "ease-out",
-    interval: 200,
-    scale: 1.2
-})
+sr.reveal('.grid-about')

@@ -1,10 +1,51 @@
-body {
+* {
     text-align: center;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  'Helvetica Neue', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 5px;
+    background-color: #6aaeed;
+}
+
+.text-pro {
+    width: 275px;
+    animation: typing 2.3s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #4A55A2;
+
+    color: #4A55A2;
+    font-weight: 100;
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  'Helvetica Neue', sans-serif;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .top-container {
-    height: 664.290px;
+    height: 700px;
     padding-top: 80px;
     padding-bottom: 80px;
     background: linear-gradient(300deg, #C5DFF8, #A0BFE0, #4A55A2);
@@ -50,6 +91,10 @@ h1 {
     font-weight: 100;
 }
 
+.title-intro {
+    margin-top: 1rem;
+}
+
 .intro {
     width: 30%;
     margin: auto;
@@ -59,41 +104,53 @@ h1 {
 
 .top-cloud {
     position: absolute;
-    right: 300px;
+    right: 1000px;
+    top: 300px;
     user-select: none;
-    animation: cloudMove 10s linear infinite;
+    animation: cloudAnimation2 25s ease-in-out infinite;
+}
+
+@keyframes cloudAnimation2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(300%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .bottom-cloud {
     position: absolute;
-    left: 600px;
-    top: 450px;
+    right: 700px;
+    top: 430px;
     user-select: none;
-    animation: cloudMove 10s linear infinite;
+    animation: cloudAnimation 25s ease-in-out infinite;
 }
 
-@keyframes cloudMove {
-    0%, 100% {
-        transform: translateX(-100%, 0%);
-    }
-
-    25% {
-        transform: translate(-100%, -50%);
+@keyframes cloudAnimation {
+    0% {
+        transform: translateX(100%);
     }
 
     50% {
-        transform: translateX(100%, -50%);
+        transform: translateX(-310%);
     }
 
-    75% {
-        transform: translate(100%, 0%);
+    100% {
+        transform: translateX(100%);
     }
+
 }
 
 .mountain {
     user-select: none;
     position: relative;
-    top: 88px;
+    top: 77px;
 }
 
 .icon-profile {
@@ -117,7 +174,21 @@ h1 {
 .code-img {
     position: relative;
     user-select: none;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
+    right: 20px;
+}
+
+.text-typing {
+    margin: 0;
+    position: relative;
+    right: 90px;
+    width: 80%;
+}
+
+.typing h3 {
+    position: relative;
+    right: 160px;
+    margin-bottom: 1rem;
 }
 
 a .img-perfum {
@@ -130,16 +201,34 @@ a .img-grid {
 
 .img-perfum {
     border-radius: 10px;
-    transition: transform 0.3s;
+    border: 1px solid transparent;
+    transition: transform 0.3s, border-color 0.3s ease;
 }
 
 .img-grid {
+    border: 1px solid transparent;
     border-radius: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, border-color 0.3s ease;
 }
 
 .img-perfum:hover, .img-grid:hover {
+    border-color: #4A55A2;
     transform: translateY(-10px);
+    animation: pulse-border 2s infinite;
+}
+
+@keyframes pulse-border {
+    0% {
+        border-width: 3px;
+    }
+
+    50% {
+        border-width: 3px;
+    }
+
+    100% {
+        border-width: 3px;
+    }
 }
 
 .middle-container {
@@ -209,25 +298,52 @@ h3 {
     margin: 10px 20px;
     text-decoration: none;
     transition: color;
+    position: relative;
 }
 
-.footer-link:hover {
-    color: white;
+.footer-link::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #595f90;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.title-project {
+    margin-bottom: 1rem;
 }
 
 .subtitle-project1 {
     font-weight: 100;
     margin-top: -15px;
     font-size: 30px;
+    margin-bottom: 2rem;
 }
 
 .subtitle-project2 {
     font-weight: 100;
     font-size: 30px;
+    margin-bottom: 1rem;
 }
 
 .mountain, .title-text, .skills, .project, .image-perfum, .image-grid, .icon-profile, .intro, .title-intro {
     visibility: hidden;
+}
+
+.background-img1 {
+    position: relative;
+    left: 46rem;
+    margin-bottom: 2rem;
+    width: 450px;
+    height: 350px;
+    background-color: #ccc;
 }
 
 @media (min-width: 319px) and (max-width: 450px) {
@@ -237,8 +353,13 @@ h3 {
 
     h1 {
         position: relative;
-        top: 10rem;
-        font-size: 3rem;
+        top: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .text-pro {
+        font-size: 2rem;
+        margin-top: 6rem;
     }
 
     h3 {
@@ -260,7 +381,7 @@ h3 {
     
     .mountain {
         position: unset;
-        margin-top: 250px;
+        margin-top: 204px;
         width: 350px;
         height: 208px;
     }
@@ -268,27 +389,46 @@ h3 {
     .top-cloud {
         position: absolute;
         width: 90px;
-        top: 80px;
-        right: 8.5rem;
+        top: 500px;
+        right: 11rem;
+    }
+
+    @keyframes cloudAnimation2 {
+        0% {
+            transform: translateX(-100%);
+        }
+    
+        50% {
+            transform: translateX(170%);
+        }
+    
+        100% {
+            transform: translateX(-100%);
+        }
     }
 
     .bottom-cloud {
         position: absolute;
         width: 90px;
         bottom: 400px;
-        top: 430px;
-        left: 8rem;
-        animation: cloudMove-bottom 10s linear infinite;
+        top: 590px;
+        left: 13rem;
     }
 
-    @keyframes cloudMove-bottom {
-        0%, 100% {
-          transform: translateX(-100%);
+    @keyframes cloudAnimation {
+        0% {
+            transform: translateX(100%);
         }
+    
         50% {
-          transform: translateX(100%);
+            transform: translateX(-190%);
         }
-      }
+    
+        100% {
+            transform: translateX(100%);
+        }
+    
+    }
 
     .intro {
         width: 80%;
